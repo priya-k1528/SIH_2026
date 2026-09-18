@@ -1,0 +1,6 @@
+{
+  "name": "Vernacular Pedagogy",
+  "description": "AI-Powered Vernacular Pedagogy and Real-Time Speech Translation Tool for Mother Tongue-Based Primary Education (Jharkhand SIH26042)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
