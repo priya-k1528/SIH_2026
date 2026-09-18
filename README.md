@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎓 Vernacular Pedagogy (SIH 2026)
 ### AI-Powered Vernacular Pedagogy and Real-Time Speech Translation Tool for Mother Tongue-Based Primary Education
 
@@ -170,3 +171,7 @@ This project is developed for the Smart India Hackathon 2026. Distributed under 
 #   T r i b a l L e a r n  
  #   T r i b a l L e a r n  
  
+=======
+# SIH_2026
+Tribal Learn AI is an offline first Android application that uses AI, NLP and Neural Machine Translation to support mothertongue education in tribal schools. It provides context-aware translation between Hindi,English,Santhali,Ho and Mundari,along with voice translation,FLN learning,curriculum generation,worksheets,flashcards and offline access.
+>>>>>>> 524085975180eaec5646fc5dc0eb33ed3c98dd3d
