@@ -1,178 +1,157 @@
+# Tribal Learn AI 🌱
 
-# 🎓 Vernacular Pedagogy (SIH 2026)
-### AI-Powered Vernacular Pedagogy and Real-Time Speech Translation Tool for Mother Tongue-Based Primary Education
+**AI-Powered Vernacular Pedagogy and Real-Time Translation Tool for Mother-Tongue-Based Primary Education**
 
-[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84.svg?style=flat&logo=android)](https://www.android.com/)
-[![Language](https://img.shields.io/badge/Language-Kotlin-7F52FF.svg?style=flat&logo=kotlin)](https://kotlinlang.org/)
-[![UI Toolkit](https://img.shields.io/badge/UI-Jetpack%20Compose-4285F4.svg?style=flat&logo=jetpackcompose)](https://developer.android.com/jetpack/compose)
-[![AI Engine](https://img.shields.io/badge/AI-Google%20Gemini-8E75FF.svg?style=flat&logo=googlegemini)](https://ai.google.dev/)
-[![Hackathon](https://img.shields.io/badge/SIH-2026-FF9933.svg?style=flat)](#smart-india-hackathon-2026)
-[![Problem ID](https://img.shields.io/badge/Problem%20ID-SIH26042-138808.svg?style=flat)](#problem-statement)
+## 📌 About the Project
 
----
+Tribal Learn AI is an AI-powered, offline-first Android application designed to support primary school teachers in tribal regions of Jharkhand. It helps overcome language barriers by providing educational translation and learning resources in **English, Hindi, Ho, Santhali, and Mundari**.
 
-## 📌 Problem Statement & Vision (SIH26042)
+The application focuses on **context-aware and child-friendly educational translation** rather than simple word-to-word translation.
 
-In tribal and remote regions (such as **Jharkhand**), primary school children predominantly speak native indigenous mother tongues like **Santhali**, **Mundari**, and other tribal dialects, while school instruction and textbooks are delivered primarily in **Hindi** or **English**. This severe linguistic disconnect leads to early learning hurdles, lower retention, high classroom anxiety, and elevated dropout rates.
+## 🎯 Objectives
 
-**Vernacular Pedagogy** bridges this gap. Designed for **Smart India Hackathon (SIH 2026)**, this modern Android application empowers teachers and young tribal learners with **real-time bidirectional speech translation**, **interactive bilingual flashcards**, **Gemini-powered dynamic worksheet and curriculum generation**, and an **offline-ready vernacular dictionary** supporting indigenous scripts such as **Ol Chiki** (for Santhali) alongside Devanagari and Roman transliterations.
+* Support mother-tongue-based primary education
+* Reduce language barriers in tribal classrooms
+* Provide educational content in regional and tribal languages
+* Support teachers with AI-assisted learning materials
+* Enable learning resources in low-connectivity environments
+* Help preserve and promote indigenous languages
 
----
+## 🚀 Key Features
 
-## ✨ Key Features
+* 🗣️ Voice Translation
+* 💬 Text / Chat Translation
+* 🌐 Multilingual Translation
+* 📚 Foundational Literacy and Numeracy (FLN)
+* 🤖 AI-Assisted Curriculum Generation
+* 📝 Bilingual Worksheet Generation
+* 🃏 Educational Flashcards
+* 💾 Saved Teaching Materials
+* 📱 Offline-First Android Application
+* 🔄 Dictionary-Based Translation Fallback
 
-### 🎙️ 1. Real-Time Speech & Voice Translation
-- **Two-Way Audio Translation:** Instant speech-to-text and text-to-speech translation between Hindi/English and tribal languages.
-- **Classroom Dialogue Mode:** Allows non-native teachers to communicate smoothly with vernacular-speaking students during classroom instructions.
-- **Pronunciation Guides:** Audio playback assist students in learning correct pronunciation and phonetic nuances.
+## 🧠 Technologies Used
 
-### 🗂️ 2. Interactive Bilingual Flashcards
-- **Multi-Script Cards:** Displays words with corresponding illustrations, English, Hindi, and tribal scripts (e.g., Santhali in Ol Chiki ᱚᱞ ᱪᱤᱠᱤ and Mundari in Devanagari/Roman).
-- **Gamified Learning:** Smooth 3D card flip animations, category filtering (Animals, Colors, Classroom, Nature, Numbers), and interactive audio buttons.
+* **Android**
+* **Kotlin**
+* **Natural Language Processing (NLP)**
+* **Neural Machine Translation (NMT)**
+* **AI / Generative AI**
+* **Speech Processing**
+* **Room Database**
+* **Multilingual Datasets**
+* **Fine-Tuned Translation Models**
 
-### 🤖 3. AI-Powered Vernacular Content & Worksheets
-- **Generative Pedagogy via Gemini AI:** Generates context-aware vernacular lesson plans, illustrated storybooks, and printable bilingual practice worksheets.
-- **Localized Cultural Narratives:** Creates educational stories rooted in regional folklore, traditions, and everyday rural experiences.
+## 🌍 Supported Languages
 
-### 🧠 4. Vernacular Quizzes & AI Assessment
-- **Interactive Quizzes:** Picture identification, audio listening comprehension, and vernacular vocabulary challenges.
-- **Instant AI Feedback:** Automated grading and constructive encouragement in the student's mother tongue.
+| Language | Support |
+| -------- | ------- |
+| English  | ✅       |
+| Hindi    | ✅       |
+| Ho       | ✅       |
+| Santhali | ✅       |
+| Mundari  | ✅       |
 
-### 📖 5. Offline Vernacular Dictionary
-- **Zero-Connectivity Ready:** High-priority classroom instructions, daily vocabulary, numbers, and basic conversation phrases preloaded locally.
-- **Dual Transliteration:** Provides Ol Chiki / Devanagari alongside phonetic Roman text for seamless reading by both teachers and students.
+The system is designed with the possibility of extending support to additional tribal languages.
 
-### 👥 6. Role-Based Dual Experience
-- **Teacher Mode:** Class management, worksheet generation, teaching aids, and custom flashcard creation.
-- **Student Mode:** Distraction-free, vibrant, gamified interface tailored for early childhood education (ECE) and foundational literacy.
+## 🔬 AI & NLP Pipeline
 
----
-
-## 🛠️ Technology Stack & Architecture
-
-- **Platform:** Native Android (Min SDK: 24 | Target SDK: 36)
-- **Language:** Kotlin
-- **UI Framework:** Jetpack Compose with Material Design 3
-- **Architecture:** Clean Architecture + MVVM (Model-View-ViewModel) with StateFlow & Coroutines
-- **AI & LLM Integration:** Google Gemini API (`generativeai` Android SDK)
-- **Audio & Speech Engine:** Android `SpeechRecognizer` (STT) + `TextToSpeech` (TTS)
-- **Data & Storage:** Kotlin Data Classes, Room / DataStore, Offline Dictionary Cache
-- **Build System:** Gradle (Kotlin DSL - `build.gradle.kts`) with Version Catalog (`libs.versions.toml`)
-
----
-
-## 📂 Repository Structure
-
-```
-SIH_2026/
-├── app/
-│   ├── src/main/
-│   │   ├── AndroidManifest.xml
-│   │   ├── assets/
-│   │   ├── java/com/example/
-│   │   │   ├── MainActivity.kt
-│   │   │   ├── data/
-│   │   │   │   ├── dictionary/         # Preloaded Vernacular Dictionary (Santhali, Mundari, etc.)
-│   │   │   │   ├── local/              # Local preferences & persistence
-│   │   │   │   ├── model/              # Data models (Flashcards, Quizzes, Lessons)
-│   │   │   │   └── repository/         # Repository pattern abstraction
-│   │   │   ├── services/
-│   │   │   │   ├── AiContentService.kt # Gemini AI generation service
-│   │   │   │   ├── QuizGradingService.kt
-│   │   │   │   ├── SpeechRecognitionService.kt
-│   │   │   │   ├── TextToSpeechService.kt
-│   │   │   │   └── TranslationService.kt
-│   │   │   └── ui/
-│   │   │       ├── components/         # Reusable Jetpack Compose widgets
-│   │   │       ├── screens/            # Home, Flashcards, VoiceTranslation, Quiz, Worksheets, etc.
-│   │   │       ├── theme/              # Typography, Colors, Theme definitions
-│   │   │       └── viewmodel/          # ViewModel state holders
-│   │   └── res/                        # Drawables, strings, mipmaps, fonts
-│   └── build.gradle.kts
-├── gradle/                             # Gradle wrapper & version catalogs
-├── .env.example                        # Template for API Keys
-├── .gitignore                          # Git ignore rules
-├── build.gradle.kts
-├── settings.gradle.kts
-└── README.md
+```text
+Multilingual Dataset
+        ↓
+Data Cleaning
+        ↓
+Data Validation & Deduplication
+        ↓
+Dataset Preparation
+        ↓
+NLP / NMT Model Fine-Tuning
+        ↓
+Translation Model
+        ↓
+Android Integration
+        ↓
+Educational Translation
+        ↓
+Teacher / Student
 ```
 
+## 📱 Offline-First Approach
+
+Tribal Learn AI is designed for schools where continuous internet connectivity may not be available.
+
+The application uses local storage to preserve:
+
+* Translations
+* Worksheets
+* Flashcards
+* Learning materials
+* Educational content
+
+This allows teachers to continue accessing previously saved resources without depending on continuous internet connectivity.
+
+## 🎓 Educational Focus
+
+The platform is designed primarily for **primary education** and supports classroom-oriented content such as:
+
+* Mathematics
+* Foundational Literacy
+* Foundational Numeracy
+* Classroom vocabulary
+* Topic-based learning
+* Bilingual educational materials
+
+## 🏗️ Project Architecture
+
+```text
+             Teacher
+                ↓
+        Tribal Learn AI
+                ↓
+    ┌───────────┴───────────┐
+    ↓                       ↓
+Translation             Learning
+    ↓                       ↓
+NLP / NMT              FLN / Content
+    ↓                       ↓
+    └───────────┬───────────┘
+                ↓
+          Local Storage
+                ↓
+       Offline Accessibility
+```
+
+## 🌱 Social Impact
+
+Tribal Learn AI aims to:
+
+* Improve access to quality educational content
+* Support teachers in multilingual classrooms
+* Reduce dependence on English/Hindi-only resources
+* Encourage mother-tongue learning
+* Promote digital inclusion in tribal schools
+* Contribute to preservation of indigenous languages
+
+## 🔮 Future Scope
+
+Future development can include:
+
+* Additional tribal languages
+* Improved offline AI models
+* More educational datasets
+* Advanced speech recognition
+* Personalized learning
+* Teacher analytics
+* Expanded curriculum coverage
+* Wider deployment across tribal schools
+
+## 👩‍💻 Project
+
+**Project:** Tribal Learn AI
+**Hackathon:** Smart India Hackathon 2026
+**Problem Statement:** SIH26042
+**Repository:** `priya-k1528/SIH_2026`
+
 ---
 
-## 🚀 Getting Started & Local Setup
-
-### Prerequisites
-1. **Android Studio** (Ladybug / Iguana or later recommended).
-2. **JDK 17 or JDK 21**.
-3. **Android Device or Emulator** running API 24 (Android 7.0) or higher.
-4. **Google Gemini API Key** (Obtain from [Google AI Studio](https://aistudio.google.com/)).
-
-### Installation Steps
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/priya-k1528/SIH_2026.git
-   cd SIH_2026
-   ```
-
-2. **Configure Gemini API Key:**
-   - Copy `.env.example` to `.env` in the root folder:
-     ```bash
-     cp .env.example .env
-     ```
-   - Open `.env` and configure your API key:
-     ```env
-     GEMINI_API_KEY=your_actual_gemini_api_key_here
-     ```
-
-3. **Open Project in Android Studio:**
-   - Launch Android Studio.
-   - Select **Open** and choose the `SIH_2026` / `vernacular` project root directory.
-   - Let Gradle sync and download required dependencies.
-
-4. **Build and Run:**
-   - Select your target device or emulator.
-   - Click the **Run ▶** button or execute via Gradle:
-     ```bash
-     ./gradlew assembleDebug
-     ```
-
----
-
-## 🗣️ Supported Vernacular Languages & Dialects
-
-| Language | Script / Writing System | Region | Status |
-| :--- | :--- | :--- | :--- |
-| **Santhali (ᱥᱟᱱᱛᱟᱲᱤ)** | Ol Chiki (ᱚᱞ ᱪᱤᱠᱤ) & Roman | Jharkhand, West Bengal, Odisha | ✅ Supported |
-| **Mundari (मुंडारी)** | Devanagari (देवनागरी) & Roman | Jharkhand, Chota Nagpur Plateau | ✅ Supported |
-| **Hindi (हिन्दी)** | Devanagari | Inter-state & national instruction | ✅ Supported |
-| **English** | Latin / Roman | Curricular bridge language | ✅ Supported |
-
----
-
-## 🏆 Smart India Hackathon 2026 Details
-
-- **Hackathon:** Smart India Hackathon (SIH 2026)
-- **Problem Statement ID:** SIH26042
-- **Domain:** Smart Education / Tribal Welfare / Vernacular Pedagogy
-- **Organization / Ministry:** State Government of Jharkhand / Ministry of Tribal Affairs
-
----
-
-## 📄 License
-
-This project is developed for the Smart India Hackathon 2026. Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-<div align="center">
-  <sub>Built with ❤️ for inclusive, mother-tongue-based education in tribal India.</sub>
-</div>
-#   T r i b a l L e a r n 
- 
- #   T r i b a l L e a r n 
- 
- 
-=======
-# SIH_2026
-Tribal Learn AI is an offline first Android application that uses AI, NLP and Neural Machine Translation to support mothertongue education in tribal schools. It provides context-aware translation between Hindi,English,Santhali,Ho and Mundari,along with voice translation,FLN learning,curriculum generation,worksheets,flashcards and offline access.
+### Made for inclusive, accessible and mother-tongue-based education. 🌱
