@@ -167,3 +167,5 @@ This project is developed for the Smart India Hackathon 2026. Distributed under 
 <div align="center">
   <sub>Built with ❤️ for inclusive, mother-tongue-based education in tribal India.</sub>
 </div>
+#   T r i b a l L e a r n  
+ 
